@@ -87,7 +87,8 @@ const run = () => {
         }
 
         child.on('close', (code) => {
-          console.log(`child process exited with code ${code} (${new Date().getTime() - startTime}ms)`);
+          console.log();
+          console.log(`process exited with code ${code} (${new Date().getTime() - startTime}ms)`);
         });
       } catch (e) {
         console.error(e);
