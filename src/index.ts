@@ -64,6 +64,7 @@ const run = () => {
       const cmd = args.join(" ");
       const parsedCmd = cmd
           .replace(/\{project\}/g, pj.name)
+          .replace(/\{name\}/g, pj.name)
           .replace(/\{version\}/g, pj.version)
           .replace(/\{author\}/g, pj.author)
       ;
