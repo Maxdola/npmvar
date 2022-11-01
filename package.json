@@ -4,6 +4,14 @@
   "description": "Run Commands with values extracted from package.json",
   "author": "Maxdola <Max Hardtke>",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxdola/npmvar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maxdola/npmvar/issues"
+  },
+  "homepage": "https://github.com/Maxdola/npmvar#readme",
   "files": [
     "dist/index.js"
   ],
@@ -22,7 +30,7 @@
     "version": "npm build",
     "install_run": "npm run build && npm install -g . && npmvar"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/clear": "^0.1.0",
     "@types/figlet": "^1.5.5",

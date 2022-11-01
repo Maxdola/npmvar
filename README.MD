@@ -2,17 +2,13 @@
 Run Commands with values extracted from package.json
 
 ## Variables
-- {project}: name in package.json   
-- {version}: version from package.json
-- {author}: author from package.json
-
 
 | Variable  | Description               |
 |:----------|:--------------------------|
 | {project} | name in package.json      |
+| {name}    | name in package.json      |
 | {version} | version from package.json |
 | {author}  | author from package.json  |
-|           |                           |
 
 ## Example:
 ````
@@ -36,3 +32,6 @@ npmvar 1.0.0 Maxdola <Max Hardtke>
 
 process exited with code 0 (7ms)
 ````
+
+## Command
+You can either use `npmvar` or `npmvar`
