@@ -1,6 +1,6 @@
 {
   "name": "npmvar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run Commands with values extracted from package.json",
   "author": "Maxdola <Max Hardtke>",
   "main": "dist/index.js",
