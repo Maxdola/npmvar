@@ -54,9 +54,11 @@ const run = () => {
   if (fs.existsSync(packagePath)) {
     try {
       const pj = JSON.parse(fs.readFileSync(packagePath).toString("utf-8")) as PackageJson;
-      console.log(chalk.blue(`project: '${chalk.cyanBright(pj.name)}'`));
-      console.log(chalk.blue(`version: '${chalk.cyanBright(pj.version)}'`));
-      console.log(chalk.blue(`author:  '${chalk.cyanBright(pj.author)}'`));
+      console.log(chalk.blue(`project:    '${chalk.cyanBright(pj.name)}'`));
+      console.log(chalk.blue(`version:    '${chalk.cyanBright(pj.version)}'`));
+      console.log(chalk.blue(`author:     '${chalk.cyanBright(pj.author)}'`));
+      console.log(chalk.blue(`timestamp:  '${chalk.cyanBright(new Date().getTime().toString())}'`));
+      console.log(chalk.blue(`date:       '${chalk.cyanBright(new Date().toISOString())}'`));
 
       console.log();
 
@@ -67,6 +69,8 @@ const run = () => {
           .replace(/\{name\}/g, pj.name)
           .replace(/\{version\}/g, pj.version)
           .replace(/\{author\}/g, pj.author)
+          .replace(/\{timestamp\}/g, new Date().getTime().toString())
+          .replace(/\{date\}/g, new Date().toISOString())
       ;
       console.log(`${chalk.blue("raw command:")}\t ${chalk.cyanBright(cmd)}`);
       console.log(`${chalk.blue("parsed command:")}\t ${chalk.cyanBright(parsedCmd)}`);
