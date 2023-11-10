@@ -1,6 +1,6 @@
 {
   "name": "npmvar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Run Commands with values extracted from package.json",
   "author": "Maxdola <Max Hardtke>",
   "main": "dist/index.js",
@@ -42,9 +42,9 @@
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
+    "chalk": "5.3.0",
     "clear": "^0.1.0",
     "figlet": "^1.5.2",
-    "terser": "^5.15.1",
-    "chalk": "5.3.0"
+    "terser": "^5.15.1"
   }
 }
