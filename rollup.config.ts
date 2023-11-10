@@ -1,17 +1,16 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 
 export default {
   input: 'dist/index.js',
   output: {
     file: 'dist/index.js',
-    format: 'cjs',
+    format: 'es', // Changed from 'cjs' to 'es'
     strict: false,
     banner: '#! /usr/bin/env node\n',
   },
-  plugins: [resolve(), json(),
-    commonjs({include: 'node_modules/**'})],
+  plugins: [
+    json()
+  ],
   external: [
     'child_process',
     'fs',
