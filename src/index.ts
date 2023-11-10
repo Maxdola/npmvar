@@ -1,6 +1,6 @@
 import * as path from "path";
 import * as fs from "fs";
-import chalk, {reset} from "chalk";
+import chalk from "chalk";
 import figlet from "figlet";
 import clear from "clear";
 import { exec } from "child_process";

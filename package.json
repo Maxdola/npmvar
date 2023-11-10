@@ -4,6 +4,7 @@
   "description": "Run Commands with values extracted from package.json",
   "author": "Maxdola <Max Hardtke>",
   "main": "dist/index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Maxdola/npmvar.git"
@@ -35,16 +36,15 @@
     "@types/clear": "^0.1.0",
     "@types/figlet": "^1.5.5",
     "@types/rollup-plugin-json": "^3.0.3",
-    "chalk": "4.1.2",
     "rollup": "^2.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^3.8.3"
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
     "clear": "^0.1.0",
     "figlet": "^1.5.2",
-    "terser": "^5.15.1"
+    "terser": "^5.15.1",
+    "chalk": "5.3.0"
   }
 }

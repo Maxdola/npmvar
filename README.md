@@ -3,12 +3,14 @@ Run Commands with values extracted from package.json
 
 ## Variables
 
-| Variable  | Description               |
-|:----------|:--------------------------|
-| {project} | name in package.json      |
-| {name}    | name in package.json      |
-| {version} | version from package.json |
-| {author}  | author from package.json  |
+| Variable    | Description                         |
+|:------------|:------------------------------------|
+| {project}   | name in package.json                |
+| {name}      | name in package.json                |
+| {version}   | version from package.json           |
+| {author}    | author from package.json            |
+| {timestamp} | the current timestamp in ms         |
+| {date}      | the current data in ISO 8601 Format |
 
 ## Example:
 ````
